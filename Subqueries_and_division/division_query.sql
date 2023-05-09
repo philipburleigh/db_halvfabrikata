@@ -42,3 +42,16 @@ WHERE involved."role" = 'actor'
          INNER JOIN person ON involved.personid = person.id
          where person."name" = 'Roger Spottiswoode'
              and involved."role" = 'director' );
+
+-- Below is an example of a subquery in a JOIN clause
+-- QUESTION: How many movies produced in 2011 have entries registered in involved for all roles defined in the roles relation?
+SELECT COUNT(*) AS num_movies
+FROM (
+  SELECT i.movieId, COUNT(DISTINCT i.role) AS num_roles
+  FROM involved i
+  JOIN movie m ON m.id = i.movieId AND m.year = 2011
+  GROUP BY i.movieId
+) sub
+JOIN (
+  SELECT COUNT(*) AS num_roles FROM role
+) r ON r.num_roles = sub.num_roles;
