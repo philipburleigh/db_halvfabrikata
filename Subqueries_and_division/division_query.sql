@@ -7,7 +7,7 @@ from (
         FROM movie
             JOIN involved ON involved.movieid = movie.id
         WHERE movie.year = 2011
-        GROUP by movie.title
+        GROUP by movie.id
         HAVING count(distinct involved."role") = (
                 select count(DISTINCT involved."role")
                 from involved
