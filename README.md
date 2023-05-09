@@ -28,3 +28,13 @@ Opsætning af db:
 - Slet database: `dropdb -U postgres <databaseNavn>`
 
   (`postgres` kan skulle erstattes af navnet på din bruger)
+
+- Vis alle databser: `\l`
+
+- Connect til en database `\c <databaseNavn>`
+
+- List alle tabeller i databasen: `\dt`
+
+- Beskriv tabel (kolonner, data typer, contraints): `\d <tabelNavn>`
+
+- LUK: `\q`
