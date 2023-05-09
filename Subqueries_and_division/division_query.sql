@@ -1,5 +1,5 @@
 -- Below is an example of a division query
--- QUESTION: Of all the movies produced in 2002, there are 282 that have entries registered in involved for all roles defined in the roles relation.
+-- QUESTION:
 -- How many movies produced in 2011 have entries registered in involved for all roles defined in the roles relation?
 
 select count(*)
