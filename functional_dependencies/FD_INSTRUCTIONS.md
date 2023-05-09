@@ -1,10 +1,10 @@
 # Functional Dependencies Instructions
 
-1. Opdater databasenavnet og rækkerne i _basescript.py_:
+1. Opdater tabelnavnet og rækkerne i _basescript.py_:
 
-   `# INSERT DB NAME HERE:`
+   `# INSERT TABLE NAME HERE:`
 
-   `DB_NAME = "<databaseNavn>"`
+   `TABLE_NAME = "<tabelNavn>"`
 
    `# INSERT COLUMN NAMES HERE:`
 

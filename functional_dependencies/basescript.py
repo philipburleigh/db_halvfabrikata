@@ -1,5 +1,5 @@
-# INSERT DB NAME HERE:
-DB_NAME = ""
+# INSERT TABLE NAME HERE:
+TABLE_NAME = ""
 
 # INSERT COLUMN NAMES HERE:
 R = ['id', 'pid', 'sid', 'sn', 'pn', 'mid', 'mn']
@@ -18,7 +18,7 @@ FROM (
 
 
 def PrintSQL(Att1, Att2):
-    print(SQLquery % (DB_NAME, Att1, Att2, Att1, DB_NAME, Att1, Att2))
+    print(SQLquery % (TABLE_NAME, Att1, Att2, Att1, TABLE_NAME, Att1, Att2))
 
 
 for i in range(len(R)):
