@@ -1,4 +1,4 @@
 .vscode/settings.json
 
-./functional_dependencies/fd_queries
-./functional_dependencies/basescript.py
+functional_dependencies/fd_queries
+functional_dependencies/basescript.py
