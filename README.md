@@ -12,7 +12,11 @@ Opsætning af db:
 
    (`postgres` kan skulle erstattes af navnet på din bruger)
 
-2.
+2. Pipe ddl.sql ind i databasen:
+
+   `psql -U postgres -q <databaseNavn> < ddl.sql`
+
+   (`postgres` kan skulle erstattes af navnet på din bruger)
 
 ### Brugbare kommandoer:
 
